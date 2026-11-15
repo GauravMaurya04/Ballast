@@ -1,0 +1,39 @@
+# Binaries
+/bin/
+/ballast
+/ballastctl
+/ballast-chaos
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries, coverage, profiles
+*.test
+*.out
+coverage.*
+*.coverprofile
+*.prof
+*.pprof
+
+# Go workspace (local only)
+go.work
+go.work.sum
+
+# Simulation failure traces (SPEC §17.2); reproduce from the seed instead
+/sim/failures/
+
+# Local node data (WAL, snapshots, LOCK)
+/data/
+/tmp/
+
+# Environment and editors
+.env
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
